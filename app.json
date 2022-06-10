@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Periscopio",
+    "slug": "Periscopio",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
