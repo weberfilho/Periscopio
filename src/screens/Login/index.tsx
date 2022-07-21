@@ -14,14 +14,19 @@ import { Button } from '../../components/Button';
 import { Input } from '../../components/Form/Input';
 
 import Imagem from '../../assets/Logo.png';
-import { useNavigation } from '@react-navigation/native';
 
-export function Login() {
-  const navigation = useNavigation();
+
+export function Login({ navigation }: any) {
+  function handleSignIn() {
+    navigation.navigate('Home')
+  }
+  function handleSignUp() {
+    navigation.navigate('Cadastro')
+  }
   return (
     <Container>
       <LogoContainer>
-        <Logo source={Imagem} />        
+        <Logo source={Imagem} />
       </LogoContainer>
 
       <Input label='Email' placeholder='Digite seu email' />
@@ -30,18 +35,19 @@ export function Login() {
       <ForgotPin>Esqueci Minha Senha</ForgotPin>
       <ButtonRow>
         <ButtonGroup>
-        <Button
-          title='CADASTRAR'
-          onPress={() => navigation.navigate('Cadastro')}
-        />
+          <Button
+            title='CADASTRAR'
+            onPress={handleSignUp}
+          />
         </ButtonGroup>
         <ButtonGroup>
-        <Button
-          title='ENTRAR'
-        />
+          <Button
+            title='ENTRAR'
+            onPress={handleSignIn}
+          />
         </ButtonGroup>
-       
-       
+
+
       </ButtonRow>
 
 

@@ -5,7 +5,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   padding: 25px;
-  `;
+`;
 
 export const LogoContainer = styled.View`
   align-items: center;
@@ -18,7 +18,6 @@ export const Logo = styled.Image`
   height: 85px;
 `;
 
-
 export const ContentButtton = styled.View`  
   padding: 10px; 
 `;
@@ -26,7 +25,6 @@ export const ContentButtton = styled.View`
 export const ButtonRow = styled.View`
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
 `;
 
 export const ButtonGroup = styled.View`

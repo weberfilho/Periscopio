@@ -31,7 +31,7 @@ export function AuthStackRoutes() {
 
       <Stack.Screen
         name='Home'
-        component={AppTabRoutes}
+        component={AppDrawerRoutes}
       />
 
 
